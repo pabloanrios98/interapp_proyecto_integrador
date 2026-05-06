@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: inline;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 300px;
+}
+
+/* --- EXPLICACIÓN DE DISPLAY: INLINE --- */
+.tag-inline {
+    display: inline; /* Hace que los elementos se queden en la misma línea */
+    background-color: #e0f7fa;
+    color: #00796b;
+    padding: 5px 10px;
+    border: 1px solid #b2ebf2;
+    margin-right: 5px;
+}
+
+/* --- EXPLICACIÓN DE POSITION: RELATIVE --- */
+.box-container {
+    margin-top: 30px;
+    border: 2px dashed #ff0000;  /*Borde punteado*/
+    padding: 30px;
+}
+
+.box {
+    width: 80px;
+    height: 80px;
+    background-color: #ffccbc;
+    display: inline-block; /* Para que se vean como cajas pero en línea */
+    text-align: center;
+    line-height: 80px;
+}
+
+.relative-box {
+    position: relative; /* Activamos el posicionamiento relativo */
+    top: -15px;         /* Lo movemos 15px hacia ARRIBA de su posición original */
+    left: 20px;         /* Lo movemos 20px hacia la DERECHA */
+    background-color: #ff5722;
+    color:white;
+}
+

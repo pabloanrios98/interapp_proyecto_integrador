@@ -2,128 +2,66 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Plataforma de Intercambio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/style.css">
+    <title>InterApp</title>
 </head>
 <body>
 
-<h1>Plataforma de Intercambio</h1>
+<h1 class="titulo">Plataforma de Intercambio</h1>
+
+
+<section class="container" id="container">
+		<section class="form-container sign-up-container">
+			<form action="#">
+				<h2 class="titulo1"">Creación de Usuario</h2>
+				<section class="social-container">
+					<img src="images/logo.png" alt="" width="180">
+					<br>
+					<br>
+				</section>
+				<input type="text" placeholder="Nombre" required>
+				<input type="text" placeholder="Usuario" required>
+				<input type="date" placeholder="Fecha Nacimiento" required>
+				<input type="email" placeholder="Correo Electrónico" required>
+				<input type="email" placeholder="Confirmar Correo Electrónico" required>
+				<input type="password" placeholder="Contraseña" required>
+				<input type="password" placeholder="Confirmar Contraseña" required>
+				<input type="number" placeholder="Celular" required>
+				<br>
+
+				<button>Inciar Sesión</button>
+			</form>
+		</section>
 
 <!-- 1. Registro -->
+ <section class="container">
 <h2>Registro de Usuario</h2>
 <form>
-    <label for="">Nombre:</label><br>
+    <label class="registro" for="">Nombre:</label><br>
     <input type="text" name="" id="" required><br><br>
 
-    <label for="">Usuario:</label><br>
+    <label class="registro" for="">Usuario:</label><br>
     <input type="text" name="" id="" required><br><br>
 
-    <label for="">Fecha de nacimiento:</label><br>
+    <label class="registro" for="">Fecha de nacimiento:</label><br>
     <input type="date" name="" id="" required><br><br>
 
-    <label for="">Correo:</label><br>
+    <label class="registro" for="">Correo:</label><br>
     <input type="email" name="" id="" required><br><br>
 
-    <label for="">Confirmar correo:</label><br>
+    <label class="registro" for="">Confirmar correo:</label><br>
     <input type="email" name="" id="" required><br><br>
 
-    <label for="">Contraseña:</label><br>
+    <label class="registro" for="">Contraseña:</label><br>
     <input type="password" name="" id="" required><br><br>
 
-    <label for="">Confirmar contraseña:</label><br>
+    <label class="registro" for="">Confirmar contraseña:</label><br>
     <input type="password" name="" id="" required><br><br>
 
     <button type="submit">Registrarse</button>
 </form>
-
-<hr>
-
-<!-- 2. Autenticación -->
-<h2>Autenticación</h2>
-
-<h3>Correo</h3>
-<form>
-    <label for="">Correo:</label><br>
-    <input type="email" name="" id="" required><br><br>
-
-    <button type="button">Enviar código</button><br><br>
-
-    <label for="">Código:</label><br>
-    <input type="text" name="" id=""><br><br>
-
-    <button type="submit">Verificar</button>
-</form>
-
-<h3>Teléfono</h3>
-<form>
-    <label for="">Teléfono:</label><br>
-    <input type="tel" name="" id="" required><br><br>
-
-    <button type="button">Enviar código</button><br><br>
-
-    <label for="">Código:</label><br>
-    <input type="text" name="" id=""><br><br>
-
-    <button type="submit">Verificar</button>
-</form>
-
-<hr>
-
-<!-- 3. Login -->
-<h2>Iniciar Sesión</h2>
-<form>
-    <label for="">Usuario:</label><br>
-    <input type="text" name="" id="" required><br><br>
-
-    <label for="">Contraseña:</label><br>
-    <input type="password" name="" id="" required><br><br>
-
-    <button type="submit">Ingresar</button>
-</form>
-
-<hr>
-
-<!-- 4. Recuperar contraseña -->
-<h2>Recuperar Contraseña</h2>
-<form>
-    <label for="">Correo:</label><br>
-    <input type="email" name="" id="" required><br><br>
-
-    <button type="submit">Recuperar</button>
-</form>
-
-<hr>
-
-<!-- 5. Editar perfil -->
-<h2>Editar Perfil</h2>
-<form>
-    <label for="">Nombre:</label><br>
-    <input type="text" name="" id=""><br><br>
-
-    <label for="">Usuario:</label><br>
-    <input type="text" name="" id=""><br><br>
-
-    <button type="submit">Actualizar</button>
-</form>
-
-<hr>
-
-<!-- 6. Foto perfil -->
-<h2>Foto de Perfil</h2>
-<form>
-    <label for="">Subir foto:</label><br>
-    <input type="file" name="" id=""><br><br>
-
-    <button type="submit">Guardar</button>
-</form>
-
-<hr>
-
-<!-- 7. Eliminar cuenta -->
-<h2>Eliminar Cuenta</h2>
-<p>¿Desea eliminar su cuenta?</p>
-<button>Eliminar Cuenta</button>
-
-<hr>
+</section>
 
 <!-- 8 - 15 Productos -->
 <h2>Gestión de Productos</h2>
