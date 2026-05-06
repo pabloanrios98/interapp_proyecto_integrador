@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 
@@ -11,40 +10,27 @@
 
 <body>
     <!-- 2. Autenticación -->
-     <section class="container" id="container">
-		<section class="form-container sign-up-container">
-			<form action="#">
-				<h2>Autenticación por Correo</h2>
-				<section class="social-container">
-					<img src="images/logo.png" alt="" width="180">
-				</section>
-        
-    <form>
-    
-        <input type="email" name="" id="" placeholder="Correo Electrónico" required><br>
+    <section class="container2" id="container">
+        <section class="form-container sign-up-container">
+            <form action="#">
+                <h2>Autenticación</h2>
+                <section class="social-container">
+                    <img src="images/logo.png" alt="" width="180">
+                </section>
 
-        <button type="button">Enviar Código</button>
-        
-        <input type="checkbox" name="" id="">Terminos y Condiciones
+                <input type="email" name="" id="" placeholder="Correo Electrónico" required>
+                <input type="tel" name="" id="" placeholder="Teléfono" required>
+                <button onclick="window.location.href='verificarCodigo.html'">
+                    Enviar Código
+                </button>
 
-        <label for="">Código:</label><br>
-        <input type="text" name="" id=""><br><br>
+                <section class="terminos-container">
+                    <input type="checkbox" id="condiciones" name="condiciones" required>
+                    <label for="condiciones">
+                        <a>Acepto los términos y condiciones</a>.
+                    </label>
+                </section>
 
-        <button type="submit">Verificar</button>
-   
-
-    <h3>Teléfono</h3>
-    
-        <label for=""></label><br>
-        <input type="tel" name="" id="" placeholder="Teléfono" required><br><br>
-
-        <button type="button">Enviar código</button><br><br>
-
-        <label for="">Código:</label><br>
-        <input type="text" name="" id=""><br><br>
-
-        <button type="submit">Verificar</button>
-    </form>
 </body>
 
 </html>
