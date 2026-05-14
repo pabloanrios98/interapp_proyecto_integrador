@@ -1,169 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>InterApp</title>
 </head>
+
 <body>
-    <!-- 1. Registro -->
 
+    <div class="perfil-container">
 
-        <!-- 8 - 15 Productos -->
-
-
-        <!-- 16. Intereses -->
-        <h2>Intereses</h2>
-        <form>
-            <label for="">Selecciona intereses:</label><br>
-            <input type="checkbox" name="" id=""> Electrónica<br>
-            <input type="checkbox" name="" id=""> Ropa<br>
-            <input type="checkbox" name="" id=""> Deportes<br>
-            <input type="checkbox" name="" id=""> calzado<br>
-            <input type="checkbox" name="" id=""> Vehiculo<br>
-            <input type="checkbox" name="" id=""> Hogar<br><br>
-
-            <button type="submit">Guardar</button>
-        </form>
-
-        <hr>
-
-        <!-- 17. Historial -->
-        <h2>Historial</h2>
-        <ul>
-            <li>Electrónica</li>
-            <li>Ropa</li>
-        </ul>
-
-        <hr>
-
-        <!-- 18. Filtro -->
-        <h2>Filtrar Productos</h2>
-        <form>
-            <select name="" id="">
-                <option></option>
-                <option>Electrónica</option>
-                <option>Ropa</option>
-                <option>Deportes</option>
-                <option>calzado</option>
-                <option>Vehiculo</option>
-                <option>Hogar</option>
-            </select>
-            <button type="submit">Filtrar</button>
-        </form>
-
-        <hr>
-
-        <!-- 19. Coincidencias -->
-        <h2>Coincidencias</h2>
-        <table border="1">
-            <thead>
-                <tr>
-                    <th>Producto</th>
-                    <th>Categoría</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Celular</td>
-                    <td>Electrónica</td>
-                </tr>
-                <tr>
-                    <td>libero</td>
-                    <td>Vehiculo</td>
-                </tr>
-            </tbody>
-        </table>
-
-        <hr>
-
-        <!-- 20. Decisión -->
-        <h2>Intercambio</h2>
-        <button>Aceptar</button>
-        <button>Rechazar</button>
-
-        <hr>
-
-        <h2>Mapa de Seguridad</h2>
-        <p>Visualiza puntos seguros cercanos (CAI) para realizar intercambios.</p>
-
-        <!-- Simulación de mapa -->
-        <div style="width:100%; height:300px; background-color:lightgray;">
-            <p style="text-align:center; padding-top:140px;">
-                Aquí se mostrará el mapa (Google Maps)
-            </p>
+        <!-- Banner superior -->
+        <div class="banner">
+            <h2 class="edit-btn">InterApp</h2>
+            <img src="images/logo.png" alt="Logo de la aplicación" class="logo" >
         </div>
 
-        <br>
+        <!-- Foto de perfil -->
+        <div class="perfil-info">
+            <img src="images/1.webp" alt="Foto perfil">
 
-        <form class="ubicacion">
-            <label for="">Ubicación actual:</label><br>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13362.414409662964!2d-75.55814713239671!3d6.348283066684048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e442ff32abe48b9%3A0xe56d92190a4c426b!2sDiagonal%2067%20%2331-150%2C%20Bello%2C%20Antioquia!5e1!3m2!1ses!2sco!4v1778035805518!5m2!1ses!2sco"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </form>
+            <div class="datos-usuario">
+                <h1>Nestor Quiñones</h1>
+                <p>✅ Intercambiador activo</p>
+                <p>Bello, Antioquia</p>
 
-        <hr>
+                <div class="botones">
+                    <button class="btn-principal">Editar Perfil</button>
+                    <button class="btn-secundario">Configuración</button>
+                </div>
+            </div>
 
-        <!-- Selección de CAI -->
-        <h2>Puntos CAI Cercanos</h2>
+            <!-- Estado -->
+            <div class="estado">
+                <h5>Estado actual</h5>
+                <span>Disponible para intercambiar</span>
+            </div>
+        </div>
 
-        <form>
-            <label for="">Seleccionar CAI:</label><br>
-            <select name="" id="">
-                <option></option>
-                <option>CAI Valadares</option>
-                <option>CAI Cabañas</option>
-                <option>CAI Sexto Distrito</option>
-            </select><br><br>
+        <!-- Categorías favoritas -->
+        <div class="categorias">
+            <h3>Productos de interés</h3>
 
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d13362.832445142943!2d-75.54738440178915!3d6.332151193491964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1scai!5e1!3m2!1ses!2sco!4v1778035651263!5m2!1ses!2sco"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </form>
+            <div class="tags">
+                <span>Celulares</span>
+                <span>Videojuegos</span>
+                <span>Laptops</span>
+                <span>Ropa</span>
+                <span>Accesorios</span>
+            </div>
+        </div>
 
-        <hr>
+        <!-- Tarjetas inferiores -->
+        <div class="cards">
 
-        <!-- Propuesta de punto -->
-        <h2>Proponer Punto de Encuentro</h2>
+            <div class="card">
+                <h3>Mis productos</h3>
+                <p>Administra los productos que tienes publicados.</p>
+                <button class="icono"> 🛒 </button>
+            </div>
 
-        <form>
-            <label for="">Punto sugerido:</label><br>
-            <input type="text" name="" id="" placeholder="Ej: CAI Centro"><br><br>
+            <div class="card">
+                <h3>Solicitudes</h3>
+                <p>Revisa las solicitudes de intercambio recibidas.</p>
+                <button class="icono"> 📰 </button>
+            </div>
 
-            <button type="submit">Enviar propuesta</button>
-        </form>
+            <div class="card">
+                <h3>Historial</h3>
+                <p>Mira todos los intercambios realizados.</p>
+                <button class="icono"> ✔ </button>
+            </div>
 
-        <hr>
+        </div>
 
-        <!-- Confirmación -->
-        <h2>Confirmación de Punto</h2>
+    </div>
 
-        <p>Ambos usuarios deben confirmar el lugar del intercambio.</p>
 
-        <button>Confirmar punto</button>
-        <button>Cancelar</button>
 
-        <hr>
-
-        <!-- Recomendación automática -->
-        <h2>Recomendación de Seguridad</h2>
-
-        <p>
-            ⚠️ Este usuario tiene baja reputación o no tiene historial.
-            Se recomienda realizar el intercambio en un punto seguro (CAI).
-        </p>
-
-        <hr>
-
-        <!-- Historial de intercambios -->
-        <h2>Historial de Intercambios</h2>
-
-        <ul>
-            <li>Intercambio realizado en CAI Centro</li>
-            <li>Intercambio realizado en CAI Norte</li>
-        </ul>
 </body>
+
 </html>
