@@ -169,10 +169,6 @@ button:hover {
     margin: 0;  
 }
 
-.ubicacion {
-    
-}
-
 footer {
     background-color: #233E83;
     color: #fff;
@@ -181,8 +177,7 @@ footer {
     position: fixed;
     left: 0;
     right: 0;
-    text-align: center;
-    z-index: 999;
+    text-align: center;	
 }
 
 footer p {
@@ -243,7 +238,7 @@ footer a {
     width:120px;
     height:120px;
     border-radius:50%;
-    border:5px solid white;
+    border:3px solid #233E83;
 }
 
 /* Datos usuario */
@@ -334,6 +329,8 @@ footer a {
     padding:20px;
     border-radius:15px;
     position:relative;
+	border:2px solid #233E83;
+	box-shadow:0px 2px 2px #233E83;	
 }
 
 .card h3{
@@ -345,8 +342,17 @@ footer a {
     font-size:14px;
 }
 
-.icono {
-	font-size: 15px;
+.icono{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    font-size: 15px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+	top: 95px;
 
 }
 
@@ -368,4 +374,19 @@ footer a {
     left: 40px;
     width:120px;
     height:100px;
+}
+
+.crear-Usuario {
+	border-radius: 20px;
+	border: 1px solid #233E83;
+	background-color: #233E83;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+	text-decoration: none;
+	
 }

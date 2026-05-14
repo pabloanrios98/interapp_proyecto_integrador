@@ -1,33 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Css/style.css">
-    <title>Login</title>
+    <title>InterApp</title>
 </head>
 
 <body>
     <!-- 3. Login -->
     <section class="container1">
-        <h2>Iniciar Sesión</h2>
-        <form>
-            <section class="social-container">
-                <img src="images/logo.png" alt="" width="180">
-            </section>
-            <input type="text" name="" id="" placeholder="Usuario" required>
-            <input type="password" name="" id="" placeholder="Contraseña" required><br>
-            <button type="submit">Ingresar</button>
-        </form>
-    </section>
+    <h2>Iniciar Sesión</h2>
+    
+    <form>
+        <section class="social-container">
+            <img src="images/logo.png" alt="" width="180">
+        </section>
 
+        <input type="text" placeholder="Usuario" required>
+        
+        <input type="password" placeholder="Contraseña" required><br>
+
+        <!-- Enlace recuperar contraseña -->
+        <a href="recup_contrasena.html" class="olvido">
+            ¿Olvidaste tu contraseña?
+        </a><br><br>
+
+        <button type="button" onclick="window.location.href='interfaz.html'">
+    Ingresar
+</button>
+    </form>
+</section>
+<section>
     <footer>
         <p>
             Creado por <i class="fa fa-copyright"></i>
             <a>Grupo de los Jueves</a>
         </p>
     </footer>
+    </section>
 </body>
 
 </html>
